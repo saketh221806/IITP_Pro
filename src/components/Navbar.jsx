@@ -60,7 +60,7 @@ const Navbar = () => {
     "block w-full rounded-lg px-4 py-3 text-left text-[15px] font-medium text-white/90 transition duration-200 hover:bg-white/10 hover:text-white";
 
   return (
-    <nav className="w-full border-b border-white/10 bg-gradient-to-r from-[#111111] via-[#2b2b2b] to-[#1a1a1a] text-white shadow-lg">
+    <nav className="w-full fixed z-50 top-0 left-0 border-b border-white/10 bg-gradient-to-r from-[#111111] via-[#2b2b2b] to-[#1a1a1a] text-white shadow-lg">
       <div className="mx-auto flex min-h-20 w-full items-center justify-between px-4 lg:px-6">
         {/* Left */}
         <div className="flex shrink-0 items-center gap-3 sm:gap-4">
