@@ -1,77 +1,119 @@
-import React from 'react'
+import React from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 
-import { Separator } from "@/components/ui/separator"
-
-import Hero from '../assets/hero.png'
+import { Separator } from "@/components/ui/separator";
+import Hero from "../assets/hero.png";
 
 const Home = () => {
   return (
     <div>
-      <div className={`bg-[url(/backdrop.jpeg)] bg-fixed bg-cover h-screen bg-center flex items-center justify-center`}>
-        {/* hero section */}
-        <h1 className='font-bold text-white text-5xl text-center p-20'>Indian Institute of Technology, Patna</h1>
+      {/* HERO */}
+      <div className="relative w-full h-[80vh] md:h-screen">
+        <img
+          src="/backdrop.jpeg"
+          alt="Hero"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-black/40" />
+
+        <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
+          <h1 className="text-white whitespace-nowrap text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold">
+            Indian Institute Of Technology Patna
+          </h1>
+        </div>
+
+        <div className="absolute bottom-0 w-full">
+          <button
+            onClick={() => {
+              document.getElementById("next")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+            className="w-full bg-black/80 backdrop-blur-md hover:bg-black text-white py-3 sm:py-4 md:py-5 flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base md:text-lg tracking-wide font-semibold border-t border-white/10"
+          >
+            Explore
+            <span>↓</span>
+          </button>
+        </div>
       </div>
 
-      <Separator />
+      <div className="">
+        <Separator />
 
-        {/*About Conference */}
-        <div className='flex justify-center flex-col items-center p-10'>
-          <h1 className='font-bold font-mono text-4xl mb-5'>About The Conference</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis officia deserunt, in, dolorem nulla voluptatibus cum harum, excepturi atque corporis provident modi nobis natus aperiam repudiandae? Quo eos perferendis repudiandae id perspiciatis fugit adipisci numquam quas odit magni in eligendi tenetur vitae sapiente voluptas mollitia, veniam ut fugiat at magnam praesentium dolores a. Enim totam deserunt et porro perferendis, fugiat veritatis nisi, culpa, architecto id placeat officiis minus quasi voluptates sint tempore eaque ipsum debitis quas consequatur deleniti adipisci? At quos architecto ducimus itaque dolorum doloribus est in tempora eaque aperiam? Aspernatur possimus deleniti sit optio nam aliquam tenetur esse! Exercitationem voluptatum sequi eaque optio ex quibusdam delectus? Temporibus ullam incidunt numquam accusamus assumenda iusto sapiente! Ipsam sequi vel id tempore iste inventore labore, illum maxime doloribus! Impedit vero quia tempore quod vel reprehenderit quasi autem, rem doloribus laboriosam ipsam ratione dolorum corrupti voluptas officia repellat voluptates iusto exercitationem blanditiis sint sed voluptatibus nulla quae minima. Dolore quos ipsum similique vitae tempora dolores! Repellat et, est blanditiis ipsa labore tempore iure id, obcaecati commodi eligendi nesciunt incidunt libero. Maiores quo dicta excepturi quod recusandae ipsum autem, culpa perferendis nihil a, odio in adipisci quisquam nostrum dolor deleniti molestias tempora qui magni beatae earum mollitia nulla aperiam. Cupiditate velit obcaecati praesentium eligendi quos nisi autem iure deserunt tenetur perspiciatis earum quidem odit a ratione soluta temporibus mollitia asperiores, blanditiis quisquam explicabo eius! Suscipit, ipsa? Iure temporibus nulla possimus accusamus reprehenderit autem modi sapiente nisi libero recusandae consequuntur natus dolorum quo, a vitae odit. Hic numquam fugiat quis sit debitis quisquam non dolorem officiis maxime, vel accusantium ab, perspiciatis, aperiam vitae incidunt ratione reiciendis saepe minus dicta facere animi? Maxime iste quia eos, necessitatibus corporis est reiciendis nesciunt mollitia labore non aperiam odio. Voluptates tempora quasi, explicabo unde vero voluptatem optio.</p>
+        {/* About Conference */}
+        <div id="next" className="flex scroll-mt-20 flex-col items-center px-4 sm:px-6 md:px-10 py-10 max-w-5xl mx-auto text-center">
+          <h1 className="font-bold font-mono text-2xl sm:text-3xl md:text-4xl mb-5">
+            About The Conference
+          </h1>
+          <p className="text-sm sm:text-base leading-relaxed">
+            {/* your text */}
+          </p>
         </div>
 
         <Separator />
 
-        {/*About Institute */}
-        <div className='flex justify-center flex-col items-center p-10'>
-          <h1 className='font-bold font-mono text-4xl mb-5'>About The Institute</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis officia deserunt, in, dolorem nulla voluptatibus cum harum, excepturi atque corporis provident modi nobis natus aperiam repudiandae? Quo eos perferendis repudiandae id perspiciatis fugit adipisci numquam quas odit magni in eligendi tenetur vitae sapiente voluptas mollitia, veniam ut fugiat at magnam praesentium dolores a. Enim totam deserunt et porro perferendis, fugiat veritatis nisi, culpa, architecto id placeat officiis minus quasi voluptates sint tempore eaque ipsum debitis quas consequatur deleniti adipisci? At quos architecto ducimus itaque dolorum doloribus est in tempora eaque aperiam? Aspernatur possimus deleniti sit optio nam aliquam tenetur esse! Exercitationem voluptatum sequi eaque optio ex quibusdam delectus? Temporibus ullam incidunt numquam accusamus assumenda iusto sapiente! Ipsam sequi vel id tempore iste inventore labore, illum maxime doloribus! Impedit vero quia tempore quod vel reprehenderit quasi autem, rem doloribus laboriosam ipsam ratione dolorum corrupti voluptas officia repellat voluptates iusto exercitationem blanditiis sint sed voluptatibus nulla quae minima. Dolore quos ipsum similique vitae tempora dolores! Repellat et, est blanditiis ipsa labore tempore iure id, obcaecati commodi eligendi nesciunt incidunt libero. Maiores quo dicta excepturi quod recusandae ipsum autem, culpa perferendis nihil a, odio in adipisci quisquam nostrum dolor deleniti molestias tempora qui magni beatae earum mollitia nulla aperiam. Cupiditate velit obcaecati praesentium eligendi quos nisi autem iure deserunt tenetur perspiciatis earum quidem odit a ratione soluta temporibus mollitia asperiores, blanditiis quisquam explicabo eius! Suscipit, ipsa? Iure temporibus nulla possimus accusamus reprehenderit autem modi sapiente nisi libero recusandae consequuntur natus dolorum quo, a vitae odit. Hic numquam fugiat quis sit debitis quisquam non dolorem officiis maxime, vel accusantium ab, perspiciatis, aperiam vitae incidunt ratione reiciendis saepe minus dicta facere animi? Maxime iste quia eos, necessitatibus corporis est reiciendis nesciunt mollitia labore non aperiam odio. Voluptates tempora quasi, explicabo unde vero voluptatem optio.</p>
+        {/* About Institute */}
+        <div className="flex flex-col items-center px-4 sm:px-6 md:px-10 py-10 max-w-5xl mx-auto text-center">
+          <h1 className="font-bold font-mono text-2xl sm:text-3xl md:text-4xl mb-5">
+            About The Institute
+          </h1>
+          <p className="text-sm sm:text-base leading-relaxed">
+            {/* your text */}
+          </p>
         </div>
 
         <Separator />
 
+        {/* Sponsor */}
+        <div className="flex flex-col items-center px-4 sm:px-6 md:px-10 py-10">
+          <h1 className="font-bold font-mono text-2xl sm:text-3xl md:text-4xl mb-5">
+            Sponsors
+          </h1>
 
-        {/*Sponsor*/}
-      <div className='flex justify-center flex-col items-center p-10'>
-        <h1 className='font-bold font-mono text-4xl mb-5'>Sponsors</h1>
-        <p className='mb-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus laudantium ipsam assumenda alias adipisci nesciunt sequi incidunt delectus dolorum autem, eligendi ipsum ex similique beatae.</p>
-        <div className='mx-5'>
-          <Carousel className="w-full max-w-xl mx-auto">
-            <CarouselContent>
-              <CarouselItem className="flex justify-center items-center">
-                <img
-                  src={Hero}
-                  className="max-h-100 object-contain"
-                />
-              </CarouselItem>
+          <p className="mb-5 text-sm sm:text-base text-center max-w-2xl">
+            Lorem ipsum...
+          </p>
 
-              <CarouselItem className="flex justify-center items-center">
-                <img
-                  src={Hero}
-                  className="max-h-100 object-contain"
-                />
-              </CarouselItem>
-            </CarouselContent>
+          <div className="w-full max-w-xs sm:max-w-md md:max-w-xl">
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem className="flex justify-center items-center">
+                  <img
+                    src={Hero}
+                    className="max-h-40 sm:max-h-60 md:max-h-80 object-contain"
+                  />
+                </CarouselItem>
 
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+                <CarouselItem className="flex justify-center items-center">
+                  <img
+                    src={Hero}
+                    className="max-h-40 sm:max-h-60 md:max-h-80 object-contain"
+                  />
+                </CarouselItem>
+              </CarouselContent>
+
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
         </div>
-      </div>
 
-      <Separator />
+        <Separator />
 
-      {/*Important Dates */}
-        <div className='flex justify-center flex-col items-center p-10'>
-          <h1 className='font-bold font-mono text-4xl mb-5'>Important Dates</h1>
-          <ul className="list-disc list-inside text-left">
+        {/* Important Dates */}
+        <div className="flex flex-col items-center px-4 sm:px-6 md:px-10 py-10">
+          <h1 className="font-bold font-mono text-2xl sm:text-3xl md:text-4xl mb-5">
+            Important Dates
+          </h1>
+
+          <ul className="list-disc list-inside text-left text-sm sm:text-base max-w-md">
             <li>Registration Opens – April 1, 2026</li>
             <li>Submission Deadline – May 15, 2026</li>
             <li>Review Results – June 10, 2026</li>
@@ -79,8 +121,9 @@ const Home = () => {
             <li>Conference Date – July 10, 2026</li>
           </ul>
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

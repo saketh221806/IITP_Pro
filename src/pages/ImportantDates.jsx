@@ -1,24 +1,42 @@
-import React from 'react'
-
+import React from "react";
 const ImportantDates = () => {
   return (
     <div>
-      <div className={`bg-[url(/backdrop.jpeg)] bg-fixed bg-cover h-screen bg-center flex items-center justify-center`}>
-        {/* hero section */}
-        <h1 className='font-bold text-white text-5xl text-center p-20'>Important Dates</h1>
-      </div>
-      <div className='flex justify-center flex-col items-center py-30'>
-      <ul className="list-disc list-inside text-left">
-        <li>Registration Opens – April 1, 2026</li>
-        <li>Submission Deadline – May 15, 2026</li>
-        <li>Review Results – June 10, 2026</li>
-        <li>Final Submission – June 25, 2026</li>
-        <li>Conference Date – July 10, 2026</li>
-      </ul>
-    </div>
-    </div>
-    
-  )
-}
+      <div
+        id="next"
+        className="min-h-screen flex items-center justify-center bg-gray-100"
+      >
+        <div className="bg-white p-6 rounded-2xl shadow-md">
+          <table className="border-collapse">
+            <thead>
+              <tr>
+                <th className="px-6 py-3 text-left">Event</th>
+                <th className="px-6 py-3 text-left">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="px-6 py-3">Registration Opens</td>
+                <td className="px-6 py-3">April 1, 2026</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-3">Submission Deadline</td>
+                <td className="px-6 py-3">May 15, 2026</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-3">Conference Date</td>
+                <td className="px-6 py-3">July 10, 2026</td>
+              </tr>
+            </tbody>
+          </table>
 
-export default ImportantDates
+          <p className="text-sm text-gray-500 mt-4 text-center">
+            Key dates for submission, review, and conference events.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ImportantDates;
