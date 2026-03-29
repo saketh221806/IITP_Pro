@@ -24,7 +24,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/40" />
 
         <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
-          <h1 className="text-white whitespace-nowrap text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold">
+          <h1 className="text-white whitespace-nowrap text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
             Indian Institute Of Technology Patna
           </h1>
         </div>
@@ -53,7 +53,11 @@ const Home = () => {
             About The Conference
           </h1>
           <p className="text-sm sm:text-base leading-relaxed">
-            {/* your text */}
+            The International Conference on Emerging Technologies (ICET 2026) aims to bring together researchers, academicians, industry professionals, and students to exchange ideas and present advancements in the fields of Artificial Intelligence, Machine Learning, Systems, and Computational Sciences.
+
+            The conference will feature keynote talks from leading experts, technical paper presentations, workshops, and panel discussions focusing on real-world applications and future research directions. ICET 2026 provides a platform to foster collaboration, encourage innovation, and bridge the gap between academia and industry.
+
+            Participants will have the opportunity to showcase their work, gain insights from global leaders, and engage in meaningful discussions shaping the future of technology.
           </p>
         </div>
 
@@ -65,7 +69,11 @@ const Home = () => {
             About The Institute
           </h1>
           <p className="text-sm sm:text-base leading-relaxed">
-            {/* your text */}
+            Indian Institute of Technology Patna (IIT Patna) is one of the premier institutes of national importance established by the Government of India. Known for its excellence in teaching, research, and innovation, IIT Patna offers undergraduate, postgraduate, and doctoral programs across various disciplines of engineering, science, and humanities.
+
+            The institute is committed to advancing knowledge through cutting-edge research and fostering a culture of innovation and entrepreneurship. With state-of-the-art infrastructure, modern laboratories, and a vibrant academic environment, IIT Patna continues to contribute significantly to technological development and societal progress.
+
+            Situated in Bihar, the institute is rapidly emerging as a hub for academic excellence and industry collaboration in India.
           </p>
         </div>
 
@@ -78,7 +86,7 @@ const Home = () => {
           </h1>
 
           <p className="mb-5 text-sm sm:text-base text-center max-w-2xl">
-            Lorem ipsum...
+            We are grateful to our sponsors and partners for their continuous support in making this conference possible. Their contribution helps foster innovation, support research initiatives, and provide a platform for knowledge exchange among participants from diverse domains.
           </p>
 
           <div className="w-full max-w-xs sm:max-w-md md:max-w-xl">
@@ -114,11 +122,11 @@ const Home = () => {
           </h1>
 
           <ul className="list-disc list-inside text-left text-sm sm:text-base max-w-md">
-            <li>Registration Opens – April 1, 2026</li>
-            <li>Submission Deadline – May 15, 2026</li>
-            <li>Review Results – June 10, 2026</li>
-            <li>Final Submission – June 25, 2026</li>
-            <li>Conference Date – July 10, 2026</li>
+            <li>Registration Opens: April 1, 2026</li>
+            <li>Paper Submission Deadline: May 15, 2026</li>
+            <li>Notification of Acceptance: June 10, 2026</li>
+            <li>Camera Ready Submission: June 25, 2026</li>
+            <li>Conference Dates: July 10–12, 2026</li>
           </ul>
         </div>
       </div>
