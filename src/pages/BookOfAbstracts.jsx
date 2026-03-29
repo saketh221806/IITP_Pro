@@ -6,7 +6,7 @@ const BookOfAbstracts = () => {
   id="pdf-section"
   className="scroll-mt-24 bg-gray-100 pt-20 sm:pt-24 md:pt-28 pb-10 px-4 flex justify-center"
 >
-  <div className="w-full max-w-4xl text-center">
+  <div className="w-full text-center">
 
     {/* Heading */}
     <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6 sm:mb-8">
