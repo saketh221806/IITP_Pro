@@ -17,7 +17,6 @@ const Navbar = () => {
   const committeeActive = location.pathname.startsWith("/committee");
   const moreActive =
     location.pathname === "/accommodation" ||
-    location.pathname === "/places-to-explore" ||
     location.pathname === "/sponsorship" ||
     location.pathname === "/ContactUs";
 
@@ -245,13 +244,6 @@ const Navbar = () => {
                   Accommodation
                 </NavLink>
 
-                <NavLink
-                  to="/places-to-explore"
-                  onClick={() => setMoreOpen(false)}
-                  className="block whitespace-nowrap px-6 py-4 text-center text-[16px] text-white/90 transition duration-200 hover:bg-[#2d2d2d] hover:text-white"
-                >
-                  Places to Explore
-                </NavLink>
 
                 <NavLink
                   to="/sponsorship"
@@ -391,12 +383,6 @@ const Navbar = () => {
                     className="block w-full px-6 py-3 text-sm text-right text-white/80 hover:bg-white/10 hover:text-white"
                   >
                     Accommodation
-                  </NavLink>
-                  <NavLink
-                    to="/places-to-explore"
-                    className="block w-full px-6 py-3 text-sm text-right text-white/80 hover:bg-white/10 hover:text-white"
-                  >
-                    Places to Explore
                   </NavLink>
                   <NavLink
                     to="/sponsorship"

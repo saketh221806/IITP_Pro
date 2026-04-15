@@ -14,7 +14,6 @@ import Submission from "./pages/Submission";
 import JournalPublication from "./pages/JournalPublication";
 import Registration from "./pages/Registration";
 import Accomodation from "./pages/Accomodation"
-import PlacesToExplore from "./pages/PlacesToExplore";
 import Sponsorship from "./pages/Sponsorship";
 import ContactUs from "./pages/ContactUs";
 
@@ -35,7 +34,6 @@ const App = () => {
         <Route path="/journal-publication" element={<JournalPublication />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/accomodation" element={<Accomodation/>} />
-        <Route path="/places-to-explore" element={<PlacesToExplore />} />
         <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/ContactUs" element={<ContactUs />} />
       </Routes>
